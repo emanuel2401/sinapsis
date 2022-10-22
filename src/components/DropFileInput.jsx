@@ -29,9 +29,9 @@ const DropFileInput = () => {
                 <Input type="file" value="" {...getInputProps()}/>
             </DropFile>
             <div>
-                {yourImage.map((upFile) =>{
+                {yourImage.map((upFile,i) =>{
                     return(
-                        <Preview>
+                        <Preview key={i}>
                             <img src={upFile.preview} style={{width: '400px',height:'300px'}} alt="imagen"/>
                             <img src={upFile.preview} style={{width: '160px',height:'120px'}} alt="imagen"/>
                             <img src={upFile.preview} style={{width: '120px',height:'120px'}} alt="imagen"/>

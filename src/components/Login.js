@@ -27,7 +27,7 @@ const Login = () => {
                 container
                 spacing={3}
                 direction={"column"}
-                justify={"center"}
+                justifyContent={"center"}
                 alignItems={"center"}
               >
                 <Grid item xs={12}>
